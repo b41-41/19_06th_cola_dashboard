@@ -14,7 +14,7 @@ export const modalSlice = createSlice({
   name: 'modal',
   initialState,
   reducers: {
-    renewalOpenState: (state, action: PayloadAction<modalState['isOpen']>) => {
+    renewalOpenState: state => {
       state.isOpen = !state.isOpen;
     },
     renewalModalId: (state, action: PayloadAction<modalState['modalId']>) => {

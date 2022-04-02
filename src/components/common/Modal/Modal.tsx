@@ -16,7 +16,7 @@ const Modal = (): ReactElement => {
   const dispatch = useDispatch();
 
   const item = data?.[modalState.modalId];
-  const handleClose = () => dispatch(renewalOpenState(true));
+  const handleClose = () => dispatch(renewalOpenState());
 
   return (
     <>

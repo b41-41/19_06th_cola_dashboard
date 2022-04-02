@@ -29,7 +29,7 @@ const OrderSheetRow = ({
   const updateModalState = (id?: number) => {
     if (!isHeader) {
       id && dispatch(renewalModalId(id - 1));
-      dispatch(renewalOpenState(true));
+      dispatch(renewalOpenState());
     }
   };
 
